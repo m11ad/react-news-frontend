@@ -9,7 +9,7 @@ function App() {
     <div>
   <Router>
     <Routes>
-      <Route path="/" element={<NewsItem />} />
+      <Route path="/" element={<NewsList />} />
       <Route path="/categories/:categoryId" element={<CategoryPage />} />
     </Routes>
   </Router> 

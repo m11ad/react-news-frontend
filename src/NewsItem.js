@@ -4,7 +4,7 @@ const NewsItem = ({ item }) => {
   return (
     <div>
       <h2>{item.title}</h2>
-      <p>{item.description}</p>
+      <p>{item.body}</p>
     </div>
   );
 };
