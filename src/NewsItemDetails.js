@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import './NewsItemDetails.css';
 
 const NewsItemDetails = () => {
   const { id } = useParams();
@@ -19,12 +20,16 @@ const NewsItemDetails = () => {
   }
 
   return (
-    <div>
-      <h1>{newsItem.title}</h1>
-      <p>{newsItem.body}</p>
-      <p>By {newsItem.author}</p>
+    <div className="container">
+      <h1 className="title">{newsItem.title}</h1>
+      <p className="body">{newsItem.body}</p>
+      <p className="tags">Tags: {newsItem.tags.map(tag => tag.name).join(', ')}</p>
+      <p className="categories">
+        Category: <Link to={`/categories/${newsItem.category.id}`}>{newsItem.category.name}</Link>
+      </p>
     </div>
   );
 };
+
 
 export default NewsItemDetails;
