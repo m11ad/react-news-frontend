@@ -15,18 +15,19 @@ const CategoryPage = () => {
   useEffect(() => {
     const fetchCategory = async () => {
       const res = await axios.get(`http://127.0.0.1:8000/api/categories/${categoryId}`);
-      setCategory(res.data);
+      setCategory(res.data.category);
       setNews(res.data.news);
     };
+    
     fetchCategory();
   }, [categoryId]);
 
   return (
     <div>
       <h1>{category ? category.name : 'Loading...'}</h1>
-      {news.map(item => (
+      {news ? news.map(item => (
         <NewsItem key={item.id} item={item} />
-      ))}
+      )) : 'Loading...'}
     </div>
   );
 };

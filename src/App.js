@@ -1,22 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import CategoryPage from './CategoryPage';
+import NavBar from './NavBar';
 import NewsList from './NewsList';
+import CategoryPage from './CategoryPage';
 import NewsItemDetails from './NewsItemDetails';
 
-function App() {
+const App = () => {
   return (
-    <div>
-  <Router>
-    <Routes>
-      <Route path="/" element={<NewsList />} />
-      <Route path="/categories/:categoryId" element={<CategoryPage />} />
-      <Route path="/news/:id" element={<NewsItemDetails />} />
-    </Routes>
-  </Router> 
-  </div>
-
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<NewsList />} />
+        <Route path="/categories/:categoryId" element={<CategoryPage />} />
+        <Route path="/news/:id" element={<NewsItemDetails />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
