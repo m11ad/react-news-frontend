@@ -8,7 +8,6 @@ import NewsItemDetails from './NewsItemDetails';
 const App = () => {
   return (
     <Router>
-      <NavBar />
       <Routes>
         <Route path="/" element={<NewsList />} />
         <Route path="/categories/:categoryId" element={<CategoryPage />} />

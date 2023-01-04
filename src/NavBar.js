@@ -4,7 +4,7 @@ import './NavBar.css';
 import axios from 'axios';
 
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -17,8 +17,18 @@ const NavBar = () => {
 
   return (
     <nav>
+      <div>
       <Link to="/">Home</Link>
-      <div className="dropdown">
+      {props.currentCategory && (
+        <span>
+          {"->"}
+          <Link to={`/categories/${props.currentCategory.id}`}>
+            {props.currentCategory.name}
+          </Link>
+        </span>
+      )}
+      </div>
+            <div className="dropdown">
         <button className="dropbtn">Categories</button>
         <div className="dropdown-content">
           {categories.map(category => (

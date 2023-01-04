@@ -4,6 +4,7 @@ import './NewsItem.css';
 
 const NewsItem = ({ item }) => {
   return (
+    
     <div className="container">
       <Link to={`/news/${item.id}`}>
         <h2 className="title">{item.title}</h2>

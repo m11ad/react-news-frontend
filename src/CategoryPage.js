@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NewsItem from './NewsItem';
+import NavBar from './NavBar';
+
 
 import { useParams } from 'react-router-dom';
 
@@ -24,7 +26,8 @@ const CategoryPage = () => {
 
   return (
     <div>
-      <h1>{category ? category.name : 'Loading...'}</h1>
+            <NavBar currentCategory={category} />
+
       {news ? news.map(item => (
         <NewsItem key={item.id} item={item} />
       )) : 'Loading...'}

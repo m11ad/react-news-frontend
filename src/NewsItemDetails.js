@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
 import './NewsItemDetails.css';
+import NavBar from './NavBar';
 
 const NewsItemDetails = () => {
   const { id } = useParams();
@@ -20,6 +21,8 @@ const NewsItemDetails = () => {
   }
 
   return (
+<div>      <NavBar />
+
     <div className="container">
       <h1 className="title">{newsItem.title}</h1>
       <p className="body">{newsItem.body}</p>
@@ -27,6 +30,7 @@ const NewsItemDetails = () => {
       <p className="categories">
         Category: <Link to={`/categories/${newsItem.category.id}`}>{newsItem.category.name}</Link>
       </p>
+    </div>
     </div>
   );
 };
