@@ -1,12 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CategoryPage from './CategoryPage';
 import NewsList from './NewsList';
 import NewsItem from './NewsItem';
 
 function App() {
   return (
     <div>
-      <NewsList />
-    </div>
+  <Router>
+    <Routes>
+      <Route path="/" element={<NewsItem />} />
+      <Route path="/categories/:categoryId" element={<CategoryPage />} />
+    </Routes>
+  </Router> 
+  </div>
+
   );
 }
 
