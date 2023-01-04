@@ -4,11 +4,11 @@ import './NewsItem.css';
 
 const NewsItem = ({ item }) => {
   return (
-    <div className="news-item">
+    <div className="container">
       <Link to={`/news/${item.id}`}>
-        <h2>{item.title}</h2>
+        <h2 className="title">{item.title}</h2>
       </Link>
-      <p>{item.body}</p>
+      <p className="body">{item.body}</p>
     </div>
   );
 };
