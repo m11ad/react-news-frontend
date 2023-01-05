@@ -3,6 +3,14 @@
 
 This is a React app that allows users to browse and view news articles from various categories.
 
+
+## Prerequisites
+
+Before running this application, make sure you have the following installed on your machine:
+
+-   Node.js
+-   npm
+
 ## Getting Started
 
 1.  Clone this repository to your local machine
@@ -21,6 +29,11 @@ This is a React app that allows users to browse and view news articles from vari
 -   [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 -   [React Router](https://reactrouter.com/) - A routing library for React apps
 -   [Axios](https://github.com/axios/axios) - A library for making HTTP requests
+
+
+## Backend API
+
+This front-end was built specifically for the Grutto News API built with Laravel. In order for this application to function properly, the API must be running and accessible at [http://localhost:8000](http://localhost:8000). The source code for the API can be found in the [grutto-news-backend](https://github.com/grutto/grutto-news-backend) repository.
 
 
 ## Author
