@@ -45,11 +45,11 @@ Here are three screenshots for the front-end along with explanations:
 
 2.  **Category Page**: This screenshot shows the category page, which displays all the news items belonging to a specific category. The user can select a category from the sidebar and the page will display all the news items in that category.
 
-![Category Page Screenshot](https://imgur.com/SZiK7FY)
+![Category Page Screenshot](https://i.imgur.com/SZiK7FY.png)
 
 3.  **News Item Detail Page**: This screenshot shows the detail page for a specific news item. The page displays the title, body, and tags for the news item, as well as the category it belongs to.
 
-![News Item Detail Page Screenshot](https://imgur.com/bcCNioO)
+![News Item Detail Page Screenshot](https://i.imgur.com/bcCNioO.png)
 
 ## Author
 
