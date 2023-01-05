@@ -41,7 +41,7 @@ Here are three screenshots for the front-end along with explanations:
 
 1.  **Home Page**: This screenshot shows the home page of the application, which displays a list of all the news items. The user can browse through the list and click on a news item to view its details. Also there is a dropdown menu for the categories to select. 
 
-![Home Page Screenshot](https://imgur.com/PmOfodG)
+![Home Page Screenshot][Imgur](https://imgur.com/PmOfodG)
 
 2.  **Category Page**: This screenshot shows the category page, which displays all the news items belonging to a specific category. The user can select a category from the sidebar and the page will display all the news items in that category.
 
