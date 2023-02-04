@@ -10,7 +10,7 @@ const NewsList = () => {
     // Fetch the list of news items from the API
     const fetchNews = async () => {
       const res = await axios.get('http://127.0.0.1:8000/api/news');
-      setNews(res.data);
+      setNews(res.data.reverse());
     };
 
     fetchNews();
