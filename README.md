@@ -1,70 +1,56 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React News Front-End
 
-## Available Scripts
+This is a React app that allows users to browse and view news articles from various categories.
 
-In the project directory, you can run:
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before running this application, make sure you have the following installed on your machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   Node.js
+-   npm
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  Clone this repository to your local machine
+2.  Navigate to the root directory of the project and install the necessary dependencies by running `npm install`
+3.  Start the development server by running `npm start`
+4.  The app will be available at `http://localhost:3000` in your browser
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   View a list of all news articles
+-   Filter news articles by category
+-   View the details of a specific news article
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+-   [React Router](https://reactrouter.com/) - A routing library for React apps
+-   [Axios](https://github.com/axios/axios) - A library for making HTTP requests
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Backend API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This front-end was built specifically for the Grutto News API built with Laravel. In order for this application to function properly, the API must be running and accessible at [http://localhost:8000](http://localhost:8000). The source code for the API can be found in the [grutto-news-backend](https://github.com/grutto/grutto-news-backend) repository.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Here are three screenshots for the front-end along with explanations:
 
-## Learn More
+1.  **Home Page**: This screenshot shows the home page of the application, which displays a list of all the news items. The user can browse through the list and click on a news item to view its details. Also there is a dropdown menu for the categories to select. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Home Page Screenshot](https://i.imgur.com/PmOfodG.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2.  **Category Page**: This screenshot shows the category page, which displays all the news items belonging to a specific category. The user can select a category from the sidebar and the page will display all the news items in that category.
 
-### Code Splitting
+![Category Page Screenshot](https://i.imgur.com/SZiK7FY.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3.  **News Item Detail Page**: This screenshot shows the detail page for a specific news item. The page displays the title, body, and tags for the news item, as well as the category it belongs to.
 
-### Analyzing the Bundle Size
+![News Item Detail Page Screenshot](https://i.imgur.com/bcCNioO.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   **Milad Yekleh** - _Full Stack Developer_ - [milad.space](https://milad.space) 
